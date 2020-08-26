@@ -42,21 +42,21 @@ connectPLC();
 //readPLC(1013);
 
 
-app.get('/dynamicstatus', (req, res) => { //reads whether dynamic mode is on or off
-  respReadPLC(1013, res);
-  //res.send(readPLC(1013))
-  console.log('Done on http');
-})
-
-app.get('/hazardstatus', (req, res) => { //reads whether hazard mode is on or off
-  respReadPLC(1014, res);
-  console.log('Done on http');
-})
-
-app.get('/regularstatus', (req, res) => { //reads whether regular mode is on or off
-  respReadPLC(1015, res);
-  console.log('Done on http');
-})
+// app.get('/dynamicstatus', (req, res) => { //reads whether dynamic mode is on or off
+//   respReadPLC(1013, res);
+//   //res.send(readPLC(1013))
+//   console.log('Done on http');
+// })
+//
+// app.get('/hazardstatus', (req, res) => { //reads whether hazard mode is on or off
+//   respReadPLC(1014, res);
+//   console.log('Done on http');
+// })
+//
+// app.get('/regularstatus', (req, res) => { //reads whether regular mode is on or off
+//   respReadPLC(1015, res);
+//   console.log('Done on http');
+// })
 
 function respReadPLC(addr, res) {
   // read the values of 10 registers starting at address 0
