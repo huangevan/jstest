@@ -1,4 +1,4 @@
-const plcip = "192.168.1.225";
+const plcip = "172.16.1.11.242";
 const plcport = 502;
 // create an empty modbus client
 const ModbusRTU = require("modbus-serial");
